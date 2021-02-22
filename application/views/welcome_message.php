@@ -110,7 +110,12 @@
                         url:"http://localhost:8000/login/check.php",
                         method:"POST",
                         data:data,
-                        success:function(res){alert(res);},
+                        success:function(res){
+                          alert(res);
+                          if(res=="success"){
+                            window.location.href="https://www.youtube.com/watch?v=072tU1tamd0";
+                          }
+                        },
                         fail:function(err){console.log(err);}
                       })
                 });
