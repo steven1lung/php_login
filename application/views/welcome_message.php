@@ -110,10 +110,8 @@
                         url:"http://localhost:8000/login/check.php",
                         method:"POST",
                         data:data,
-                        complete:function(res){
-                          if(res.readyState == 4) alert(res.responseText);
-                          else console.log(res);
-                        }
+                        success:function(res){alert(res);},
+                        fail:function(err){console.log(err);}
                       })
                 });
 								</script>
